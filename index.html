@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <title>The Switch</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="switch-body" onclick="offSwitch()">
+    <div id="switch" onclick="offSwitch()"></div>
+  </div>
+
+  <script>
+    const switch1 = document.getElementById("switch");
+    const switchBody = document.getElementById("switch-body");
+
+    function offSwitch() {
+      switch1.style.transform = "translate(0px, 150px)";
+      setTimeout(() => {
+        switchBody.style.backgroundColor = "rgb(177, 189, 193)";
+      }, 450);
+    }
+  </script>
+</body>
+
+</html>

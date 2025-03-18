@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height : 100vh;
+  background-color: rgb(177, 189, 193);
+}
+
+#switch-body {
+  width : 150px;
+  height : 300px;
+  border : 5px solid white;
+  border-radius: 100px;
+  background-color: #03c04a;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#switch {
+  width : 150px;
+  height : 150px;
+  background-color: white;
+  border-radius: 100px;
+  transition: all 0.5s cubic-bezier(.92,-0.13,.92,0);
+}

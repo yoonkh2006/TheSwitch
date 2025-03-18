@@ -2,8 +2,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height : 100vh;
+  height: 100vh;
   background-color: rgb(177, 189, 193);
+  overflow : hidden;
 }
 
 #switch-body {

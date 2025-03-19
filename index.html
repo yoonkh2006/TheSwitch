@@ -10,19 +10,31 @@
 </head>
 
 <body>
-  <div id="switch-body" onclick="offSwitch()">
-    <div id="switch" onclick="offSwitch()"></div>
+  <div id="switch-body">
+    <div id="switch" onclick="Switch()"></div>
   </div>
 
   <script>
     const switch1 = document.getElementById("switch");
     const switchBody = document.getElementById("switch-body");
 
-    function offSwitch() {
-      switch1.style.transform = "translate(0px, 150px)";
-      setTimeout(() => {
+    let isTurnOff = false;
+
+    function Switch() {
+      if (isTurnOff === false) {
+        switch1.style.transform = "translate(0px, 150px)";
+        setTimeout(() => {
         switchBody.style.backgroundColor = "rgb(177, 189, 193)";
-      }, 450);
+        }, 450);
+        isTurnOff = true;
+      }
+      else {
+        switch1.style.transform = "translate(0px, 0px)";
+        setTimeout(() => {
+        switchBody.style.backgroundColor = "rgb(3, 192, 74)";
+        }, 450);
+        isTurnOff = false;
+      }
     }
   </script>
 </body>

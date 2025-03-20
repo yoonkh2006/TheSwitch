@@ -11,7 +11,7 @@
 
 <body>
   <div id="switch-body">
-    <div id="switch" onclick="Switch()"></div>
+    <div id="switch"></div>
   </div>
 
   <script>
@@ -36,6 +36,13 @@
         isTurnOff = false;
       }
     }
+    switch1.addEventListener("click", Switch);
+    switchBody.addEventListener("click", (event) => {
+      if (event.target === switchBody) {
+        Switch();
+      }
+    });
+
   </script>
 </body>
 
